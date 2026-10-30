@@ -206,14 +206,6 @@
   --logo-gray: var(--brand-gray);
 }
 
-[data-theme="light"] .process {
-  background: #ebe7e1;
-}
-
-[data-theme="light"] .diff {
-  background: #ebe7e1;
-}
-
 [data-theme="light"] .about__figure--detail {
   border-color: var(--theme-bg);
 }
@@ -1718,27 +1710,7 @@ h4 {
    10. PROCESSO / DIFERENCIAIS
    --------------------------------------------------------------------- */
 .process {
-  background: var(--c-offwhite);
-  color: var(--text-dark);
-}
-
-.process h2,
-.process h3 {
-  color: var(--text-dark);
-}
-
-.process .section-lead {
-  color: var(--text-dark-muted);
-}
-
-.process .text-accent {
-  background: linear-gradient(135deg, #e0701f 0%, #b9550f 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-}
-
-.process .eyebrow {
-  color: var(--accent-dark);
+  background: var(--c-black);
 }
 
 .timeline {
@@ -1755,7 +1727,7 @@ h4 {
   top: 24px;
   bottom: 24px;
   width: 2px;
-  background: var(--border-dark);
+  background: var(--border-strong);
 }
 
 .timeline__progress span {
@@ -1785,31 +1757,32 @@ h4 {
   font-family: var(--font-title);
   font-size: var(--fs-sm);
   font-weight: 700;
-  color: var(--accent-dark);
-  background: #ffffff;
+  color: var(--accent);
+  background: var(--c-graphite-2);
   border: 2px solid rgba(245, 134, 52, 0.45);
   border-radius: 50%;
   transition: background-color var(--t) var(--ease), color var(--t) var(--ease), transform var(--t) var(--ease);
 }
 
 .timeline__step.is-visible .timeline__dot {
-  background: var(--ink);
-  color: var(--accent);
-  border-color: var(--ink);
+  background: var(--accent-gradient);
+  color: var(--ink);
+  border-color: transparent;
 }
 
 .timeline__card {
   padding: var(--space-5);
-  background: #ffffff;
-  border: 1px solid var(--border-dark);
+  background: var(--c-graphite-2);
+  border: 1px solid var(--border);
   border-radius: var(--radius);
-  box-shadow: 0 10px 30px -18px rgba(0, 0, 0, 0.25);
+  box-shadow: var(--shadow);
   transition: transform var(--t) var(--ease), box-shadow var(--t) var(--ease);
 }
 
 .timeline__card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 24px 50px -20px rgba(0, 0, 0, 0.3);
+  border-color: rgba(245, 134, 52, 0.35);
+  box-shadow: var(--shadow-lg);
 }
 
 .timeline__title {
@@ -1819,27 +1792,27 @@ h4 {
 
 .timeline__card p {
   font-size: var(--fs-sm);
-  color: var(--text-dark-muted);
+  color: var(--text-muted);
 }
 
 .differentials {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1px;
-  background: var(--border-dark);
-  border: 1px solid var(--border-dark);
+  background: var(--border-strong);
+  border: 1px solid var(--border-strong);
   border-radius: var(--radius-lg);
   overflow: hidden;
 }
 
 .diff {
   padding: var(--space-6);
-  background: var(--c-offwhite);
+  background: var(--c-graphite-2);
   transition: background-color var(--t) var(--ease);
 }
 
 .diff:hover {
-  background: #ffffff;
+  background: var(--c-graphite-3);
 }
 
 .diff__value {
@@ -1850,7 +1823,7 @@ h4 {
   font-weight: 800;
   line-height: 1;
   letter-spacing: -0.03em;
-  color: var(--ink);
+  color: var(--accent);
   font-variant-numeric: tabular-nums;
 }
 
@@ -1861,7 +1834,7 @@ h4 {
 
 .diff__text {
   font-size: var(--fs-sm);
-  color: var(--text-dark-muted);
+  color: var(--text-muted);
 }
 
 /* ---------------------------------------------------------------------
