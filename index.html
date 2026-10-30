@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Karlys Conhariki Engenharia | Engenharia Civil em Pilar do Sul - SP</title>
+  <meta name="description" content="Karlys Conhariki Engenharia — cálculo estrutural, projetos elétrico e hidrossanitário, projetos de construção com aprovação e gestão de obras em Pilar do Sul e região.">
+  <meta name="keywords" content="engenharia civil, cálculo estrutural, projeto estrutural, projeto elétrico, projeto hidrossanitário, gestão de obras, aprovação de projetos, Pilar do Sul, Karlys Conhariki">
+  <meta name="author" content="Conhariki Engenharia">
+  <meta name="theme-color" content="#121212" id="themeColorMeta">
+  <meta name="color-scheme" content="dark light">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Conhariki Engenharia | Engenharia Civil de Alto Padrão">
+  <meta property="og:description" content="Do planejamento à gestão da obra: engenharia civil com responsabilidade técnica em Pilar do Sul - SP.">
+  <meta property="og:url" content="https://www.conhariki.com.br/">
+  <meta property="og:image" content="https://www.conhariki.com.br/assets/img/logo-karlys-conhariki.png">
+  <meta property="og:locale" content="pt_BR">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-30 -30 512 508'%3E%3Crect x='-30' y='-30' width='512' height='508' rx='90' fill='%23121212'/%3E%3Cpath fill='%23B9B6B4' d='M3 174 64 133V444H3ZM85 56 169 3V444H143V133H85Z'/%3E%3Cpath fill='%23F58634' d='M226 44 305 114V228L353 116H430L366 275 449 444H362L306 339V444H226Z'/%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Aplica o tema salvo antes da renderização (evita "piscar" de cores) -->
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem("ck-theme");
+        var theme = saved || (window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
+        document.documentElement.setAttribute("data-theme", theme);
+      } catch (e) {
+        document.documentElement.setAttribute("data-theme", "dark");
+      }
+    })();
+  </script>
+
+  <link rel="stylesheet" href="css/style.css?v=2.2.2">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "GeneralContractor",
+    "name": "Karlys Conhariki Engenharia",
+    "url": "https://www.conhariki.com.br/",
+    "telephone": "+55-15-98175-7894",
+    "email": "contato@conhariki.com.br",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Av. Papa João XXIII, 295 - Campo Grande",
+      "postalCode": "18187-030",
+      "addressLocality": "Pilar do Sul",
+      "addressRegion": "SP",
+      "addressCountry": "BR"
+    },
+    "areaServed": "Pilar do Sul, Sorocaba e região",
+    "founder": "Eng. Civil Karlys Conhariki",
+    "sameAs": [
+      "https://www.instagram.com/karlys.conhariki/",
+      "https://www.facebook.com/karlys.conhariki/",
+      "https://www.linkedin.com/in/karlys-conhariki-286788128/"
+    ],
+    "foundingDate": "2016"
+  }
+  </script>
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Pular para o conteúdo</a>
+
+  <!-- ============================================================
+       HEADER / NAVEGAÇÃO
+       ============================================================ -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#home" class="logo" aria-label="Karlys Conhariki Engenharia — voltar ao início">
+        <span class="logo__mark">
+          <svg class="logo__svg" viewBox="0 0 452 448" width="44" height="44" aria-hidden="true">
+            <path class="logo__gray" d="M3 174 64 133V444H3Z"/>
+            <path class="logo__gray" d="M85 56 169 3V444H143V133H85Z"/>
+            <path class="logo__orange" d="M226 44 305 114V228L353 116H430L366 275 449 444H362L306 339V444H226Z"/>
+          </svg>
+        </span>
+        <span class="logo__text">
+          <strong>Karlys Conhariki</strong>
+          <small>Engenharia</small>
+        </span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Navegação principal">
+        <ul class="nav__list">
+          <li><a href="#home" class="nav__link is-active">Home</a></li>
+          <li><a href="#servicos" class="nav__link">Serviços</a></li>
+          <li><a href="#portfolio" class="nav__link">Portfólio</a></li>
+          <li><a href="#diferenciais" class="nav__link">Diferenciais</a></li>
+          <li><a href="#contato" class="nav__link">Contato</a></li>
+        </ul>
+        <div class="nav__mobile-footer">
+          <a href="tel:+5515981757894" class="nav__mobile-contact">(15) 98175-7894</a>
+          <a href="mailto:contato@conhariki.com.br" class="nav__mobile-contact">contato@conhariki.com.br</a>
+        </div>
+      </nav>
+
+      <div class="header__actions">
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Alternar para tema claro" title="Alternar tema claro/escuro">
+          <svg class="theme-toggle__icon theme-toggle__icon--sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 2.5v2.2M12 19.3v2.2M4.6 4.6l1.6 1.6M17.8 17.8l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.6 19.4l1.6-1.6M17.8 6.2l1.6-1.6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          <svg class="theme-toggle__icon theme-toggle__icon--moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+        </button>
+        <a href="https://wa.me/5515981757894?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20com%20a%20Conhariki%20Engenharia." class="btn btn--accent btn--sm header__cta" target="_blank" rel="noopener">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm5.8 14.03c-.24.68-1.42 1.31-1.96 1.36-.5.05-.98.24-3.3-.69-2.79-1.1-4.56-3.96-4.7-4.14-.13-.18-1.12-1.49-1.12-2.85 0-1.35.71-2.02.96-2.29.25-.27.55-.34.73-.34h.52c.17 0 .4-.06.62.47.24.56.79 1.92.86 2.06.07.14.11.3.02.48-.09.18-.14.3-.27.46-.14.16-.29.36-.41.48-.14.14-.28.29-.12.56.16.27.71 1.17 1.52 1.89 1.05.93 1.93 1.22 2.2 1.36.27.14.43.11.59-.07.16-.18.68-.79.86-1.06.18-.27.36-.23.61-.14.25.09 1.59.75 1.86.89.27.14.45.2.52.32.07.11.07.66-.17 1.33z"/></svg>
+          <span>Orçamento</span>
+        </a>
+        <button class="hamburger" id="hamburger" type="button" aria-label="Abrir menu" aria-controls="nav" aria-expanded="false">
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+        </button>
+      </div>
+    </div>
+    <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============================================================
+         HERO
+         ============================================================ -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero__media" aria-hidden="true">
+        <img class="hero__img hero__img--dark" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=2400&q=80" alt="" fetchpriority="high">
+        <img class="hero__img hero__img--light" src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=2400&q=80" alt="" fetchpriority="low" decoding="async">
+        <div class="hero__overlay"></div>
+        <div class="hero__grid-lines"></div>
+      </div>
+
+      <div class="container hero__content">
+        <p class="eyebrow hero__eyebrow" data-hero-anim>
+          <span class="eyebrow__line"></span>
+          Engenharia Civil de Alto Padrão · Desde 2016
+        </p>
+        <h1 class="hero__title" id="hero-title" data-hero-anim>
+          Solidez que se calcula.<br>
+          <span class="text-accent">Excelência</span> que se constrói.
+        </h1>
+        <p class="hero__lead" data-hero-anim>
+          Cálculo estrutural, projetos e gestão de obras conduzidos com precisão técnica,
+          transparência e compromisso com o prazo estabelecido.
+        </p>
+        <div class="hero__actions" data-hero-anim>
+          <a href="#contato" class="btn btn--accent btn--lg">
+            Solicitar proposta
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="#portfolio" class="btn btn--ghost btn--lg">Ver projetos executados</a>
+        </div>
+
+        <ul class="hero__stats" data-hero-anim>
+          <li class="stat">
+            <span class="stat__value"><span data-counter="10">0</span>+</span>
+            <span class="stat__label">anos de atuação</span>
+          </li>
+          <li class="stat">
+            <span class="stat__value"><span data-counter="6">0</span></span>
+            <span class="stat__label">áreas de serviço em engenharia civil</span>
+          </li>
+          <li class="stat">
+            <span class="stat__value">ART</span>
+            <span class="stat__label">responsabilidade técnica nos serviços</span>
+          </li>
+        </ul>
+      </div>
+
+      <a href="#sobre" class="hero__scroll" aria-label="Rolar para a próxima seção">
+        <span class="hero__scroll-mouse"><span class="hero__scroll-wheel"></span></span>
+        <span class="hero__scroll-text">Role para explorar</span>
+      </a>
+    </section>
+
+    <!-- ============================================================
+         FAIXA DE SERVIÇOS (MARQUEE)
+         ============================================================ -->
+    <div class="marquee" role="region" aria-label="Serviços oferecidos">
+      <div class="marquee__track">
+        <ul class="marquee__list">
+          <li class="marquee__item">Cálculo Estrutural</li>
+          <li class="marquee__item">Projeto Elétrico</li>
+          <li class="marquee__item">Projeto Hidrossanitário</li>
+          <li class="marquee__item">Fundações</li>
+          <li class="marquee__item">Estruturas Metálicas</li>
+          <li class="marquee__item">Gestão da Construção</li>
+          <li class="marquee__item">Aprovação de Projetos</li>
+          <li class="marquee__item">Planejamento de Pré-Construção</li>
+          <li class="marquee__item">Orçamento e Cronograma</li>
+          <li class="marquee__item">Detalhamento de Armaduras</li>
+        </ul>
+        <ul class="marquee__list" aria-hidden="true">
+          <li class="marquee__item">Cálculo Estrutural</li>
+          <li class="marquee__item">Projeto Elétrico</li>
+          <li class="marquee__item">Projeto Hidrossanitário</li>
+          <li class="marquee__item">Fundações</li>
+          <li class="marquee__item">Estruturas Metálicas</li>
+          <li class="marquee__item">Gestão da Construção</li>
+          <li class="marquee__item">Aprovação de Projetos</li>
+          <li class="marquee__item">Planejamento de Pré-Construção</li>
+          <li class="marquee__item">Orçamento e Cronograma</li>
+          <li class="marquee__item">Detalhamento de Armaduras</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ============================================================
+         SOBRE
+         ============================================================ -->
+    <section class="section about" id="sobre" aria-labelledby="about-title">
+      <div class="container about__grid">
+        <div class="about__media reveal reveal--left">
+          <figure class="about__figure about__figure--main">
+            <img src="assets/img/engenheiro-conhariki.jpg" alt="Engenheiro desenhando o projeto de uma edificação" loading="lazy" width="1200" height="1500">
+          </figure>
+          <figure class="about__figure about__figure--detail">
+            <img src="assets/img/concretagem-detalhe.jpg" alt="Concretagem de fundações em obra conduzida pela Conhariki Engenharia" loading="lazy" width="800" height="800">
+          </figure>
+          <div class="about__badge">
+            <span class="about__badge-label">Registro profissional</span>
+            <strong class="about__badge-value">CREA-SP</strong>
+            <span class="about__badge-number">Engenheiro Civil · FACENS</span>
+          </div>
+        </div>
+
+        <div class="about__content">
+          <p class="eyebrow reveal"><span class="eyebrow__line"></span>Sobre o escritório</p>
+          <h2 class="section-title reveal" id="about-title">
+            Engenharia com assinatura,<br>responsabilidade e <span class="text-accent">método</span>.
+          </h2>
+          <p class="section-lead reveal">
+            A Conhariki Engenharia une rigor técnico e atendimento próximo. Cada projeto é conduzido pessoalmente
+            pelo Engenheiro Civil Karlys Conhariki, formado pela FACENS e especialista em estruturas de concreto e aço,
+            com Anotação de Responsabilidade Técnica (ART) nos serviços prestados.
+          </p>
+          <p class="reveal">
+            O escritório conta com uma rede de empresas parceiras qualificadas, experientes e treinadas para identificar
+            as necessidades de cada cliente, entregando projetos coesos nas mais variadas áreas da Engenharia Civil —
+            no prazo estabelecido, por um preço justo e com excelente qualidade.
+          </p>
+
+          <ul class="pillars">
+            <li class="pillar reveal">
+              <span class="pillar__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M12 2l8 4v6c0 5-3.4 8.7-8 10-4.6-1.3-8-5-8-10V6l8-4z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M8.5 12l2.5 2.5 4.5-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+              <div>
+                <h3 class="pillar__title">Autoridade técnica</h3>
+                <p class="pillar__text">Engenheiro Civil formado pela FACENS, especialista em estruturas de concreto e aço.</p>
+              </div>
+            </li>
+            <li class="pillar reveal">
+              <span class="pillar__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1" fill="none" stroke="currentColor" stroke-width="1.6"/><rect x="14" y="3" width="7" height="7" rx="1" fill="none" stroke="currentColor" stroke-width="1.6"/><rect x="3" y="14" width="7" height="7" rx="1" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M14 17.5h7M17.5 14v7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+              </span>
+              <div>
+                <h3 class="pillar__title">Rede de parceiros</h3>
+                <p class="pillar__text">Empresas parceiras qualificadas para dar o suporte necessário a cada projeto.</p>
+              </div>
+            </li>
+            <li class="pillar reveal">
+              <span class="pillar__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 7v5l3 2" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+              <div>
+                <h3 class="pillar__title">Compromisso com prazos</h3>
+                <p class="pillar__text">Serviços contratados entregues no prazo estabelecido, por um preço justo.</p>
+              </div>
+            </li>
+          </ul>
+
+          <div class="about__signature reveal">
+            <div class="about__signature-avatar" aria-hidden="true">KC</div>
+            <div>
+              <strong>Eng. Civil Karlys Conhariki</strong>
+              <span>Especialista em Estruturas de Concreto e Aço · FACENS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SERVIÇOS — BENTO GRID
+         ============================================================ -->
+    <section class="section services" id="servicos" aria-labelledby="services-title">
+      <div class="container">
+        <header class="section-header">
+          <div>
+            <p class="eyebrow reveal"><span class="eyebrow__line"></span>Serviços</p>
+            <h2 class="section-title reveal" id="services-title">Soluções completas em<br><span class="text-accent">engenharia civil</span>.</h2>
+          </div>
+          <p class="section-lead section-header__lead reveal">
+            Do planejamento da construção à gestão do canteiro, reunimos os projetos e serviços
+            de que a sua obra precisa, para obras residenciais e comerciais.
+          </p>
+        </header>
+
+        <div class="bento">
+          <article class="bento__card bento__card--structural reveal" data-tilt>
+            <div class="bento__bg" style="background-image:url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1400&q=80')" aria-hidden="true"></div>
+            <div class="bento__body">
+              <span class="bento__index">01</span>
+              <span class="bento__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V8l7-5 7 5v13M9 21v-6h6v6M9 11h6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+              <h3 class="bento__title">Cálculo Estrutural</h3>
+              <p class="bento__text">
+                Projetos de cálculo estrutural em concreto armado, fundações e estruturas metálicas.
+                Entregamos lista de materiais, plantas de locação e detalhamento de armaduras.
+              </p>
+              <ul class="bento__tags">
+                <li>Concreto armado</li>
+                <li>Fundações</li>
+                <li>Estruturas metálicas</li>
+                <li>Detalhamento de armaduras</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="bento__card bento__card--management reveal" data-tilt>
+            <div class="bento__body">
+              <span class="bento__index">02</span>
+              <span class="bento__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="17" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M3 9h18M8 2v4M16 2v4M7 13h4M7 17h7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+              </span>
+              <h3 class="bento__title">Gestão da Construção</h3>
+              <p class="bento__text">
+                Fazemos a gestão da sua obra, do orçamento à administração do canteiro.
+              </p>
+              <ul class="bento__tags">
+                <li>Orçamentos</li>
+                <li>Cronograma</li>
+                <li>Compras</li>
+                <li>Execução</li>
+                <li>Administração do canteiro</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="bento__card bento__card--reports reveal" data-tilt>
+            <div class="bento__body">
+              <span class="bento__index">03</span>
+              <span class="bento__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9l-6-6z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M14 3v6h6M8 13h8M8 17h5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+              </span>
+              <h3 class="bento__title">Projetos Elétrico e Hidrossanitário</h3>
+              <p class="bento__text">
+                Projetos elétricos e de esgoto, águas pluviais e reaproveitamento, água fria e quente, para obras
+                residenciais e comerciais — com dimensionamento, lista de materiais e plantas de instalação.
+              </p>
+            </div>
+          </article>
+
+          <article class="bento__card bento__card--renovation reveal" data-tilt>
+            <div class="bento__bg" style="background-image:url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80')" aria-hidden="true"></div>
+            <div class="bento__body">
+              <span class="bento__index">04</span>
+              <span class="bento__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7M5 10v10h14V10" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 20v-5h4v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+              </span>
+              <h3 class="bento__title">Projetos de Construção</h3>
+              <p class="bento__text">
+                Projetos elaborados conforme as necessidades do cliente, com recursos computacionais de ponta,
+                e aprovação junto aos órgãos competentes.
+              </p>
+            </div>
+          </article>
+
+          <article class="bento__card bento__card--consulting reveal" data-tilt>
+            <div class="bento__body">
+              <span class="bento__index">05</span>
+              <span class="bento__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9 10h6M9 14h4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+              </span>
+              <h3 class="bento__title">Planejamento de Pré-Construção</h3>
+              <p class="bento__text">
+                Estudamos a viabilidade da sua construção, ajudamos na escolha do melhor terreno e local
+                e preparamos pré-orçamento e cronograma.
+              </p>
+              <a href="#contato" class="link-arrow">
+                Agendar uma conversa
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="bento__card bento__card--cta reveal">
+            <div class="bento__body">
+              <p class="bento__cta-kicker">Projeto sob medida?</p>
+              <h3 class="bento__title">Conte sua ideia. Nós entregamos a engenharia.</h3>
+              <a href="#contato" class="btn btn--dark">Falar com o engenheiro</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         PORTFÓLIO — SCROLL HORIZONTAL
+         ============================================================ -->
+    <section class="portfolio" id="portfolio" aria-labelledby="portfolio-title">
+      <div class="portfolio__sticky">
+        <div class="portfolio__header container">
+          <div>
+            <p class="eyebrow"><span class="eyebrow__line"></span>Portfólio</p>
+            <h2 class="section-title" id="portfolio-title">Obras que <span class="text-accent">falam</span> por nós.</h2>
+          </div>
+          <div class="portfolio__controls">
+            <span class="portfolio__counter" aria-live="polite"><strong id="portfolioCurrent">01</strong> / <span id="portfolioTotal">06</span></span>
+            <div class="portfolio__progress" aria-hidden="true"><span id="portfolioProgress"></span></div>
+            <div class="portfolio__arrows">
+              <button class="portfolio__arrow" id="portfolioPrev" type="button" aria-label="Projeto anterior">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+              <button class="portfolio__arrow" id="portfolioNext" type="button" aria-label="Próximo projeto">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio__viewport" id="portfolioViewport">
+          <ul class="portfolio__track" id="portfolioTrack">
+            <li class="project">
+              <article class="project__card">
+                <figure class="project__media">
+                  <img src="assets/img/portfolio/edificacao-terrea.jpg" alt="Edificação térrea em execução, com paredes erguidas e equipe trabalhando na cobertura" loading="lazy" width="1400" height="1050">
+                </figure>
+                <div class="project__info">
+                  <span class="project__number">01</span>
+                  <div>
+                    <p class="project__category">Registro aéreo de obra</p>
+                    <h3 class="project__title">Edificação térrea em execução</h3>
+                    <ul class="project__meta">
+                      <li><strong>Etapa:</strong> estrutura e cobertura</li>
+                    </ul>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="project">
+              <article class="project__card">
+                <figure class="project__media">
+                  <img src="assets/img/portfolio/obra-residencial.jpg" alt="Vista aérea de residência em construção com paredes levantadas e caminhão no lote" loading="lazy" width="1400" height="1050">
+                </figure>
+                <div class="project__info">
+                  <span class="project__number">02</span>
+                  <div>
+                    <p class="project__category">Registro aéreo de obra</p>
+                    <h3 class="project__title">Residência em construção</h3>
+                    <ul class="project__meta">
+                      <li><strong>Etapa:</strong> alvenaria e estrutura</li>
+                    </ul>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="project">
+              <article class="project__card">
+                <figure class="project__media">
+                  <img src="assets/img/portfolio/concretagem.jpg" alt="Concretagem com caminhão betoneira e bomba em obra de fundação" loading="lazy" width="1400" height="1050">
+                </figure>
+                <div class="project__info">
+                  <span class="project__number">03</span>
+                  <div>
+                    <p class="project__category">Registro aéreo de obra</p>
+                    <h3 class="project__title">Concretagem</h3>
+                    <ul class="project__meta">
+                      <li><strong>Etapa:</strong> fundações</li>
+                    </ul>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="project">
+              <article class="project__card">
+                <figure class="project__media">
+                  <img src="assets/img/portfolio/residencia-loteamento.jpg" alt="Vista aérea de residência em construção em loteamento" loading="lazy" width="1400" height="1050">
+                </figure>
+                <div class="project__info">
+                  <span class="project__number">04</span>
+                  <div>
+                    <p class="project__category">Registro aéreo de obra</p>
+                    <h3 class="project__title">Residência em loteamento</h3>
+                    <ul class="project__meta">
+                      <li><strong>Etapa:</strong> estrutura</li>
+                    </ul>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="project">
+              <article class="project__card">
+                <figure class="project__media">
+                  <img src="assets/img/portfolio/locacao-fundacoes.jpg" alt="Vista aérea da locação de fundações e baldrames em terreno" loading="lazy" width="1400" height="1050">
+                </figure>
+                <div class="project__info">
+                  <span class="project__number">05</span>
+                  <div>
+                    <p class="project__category">Registro aéreo de obra</p>
+                    <h3 class="project__title">Locação e baldrames</h3>
+                    <ul class="project__meta">
+                      <li><strong>Etapa:</strong> fundações</li>
+                    </ul>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="project">
+              <article class="project__card">
+                <figure class="project__media">
+                  <img src="assets/img/portfolio/residencia-contemporanea.jpg" alt="Vista aérea de residência contemporânea com cobertura metálica" loading="lazy" width="1400" height="1050">
+                </figure>
+                <div class="project__info">
+                  <span class="project__number">06</span>
+                  <div>
+                    <p class="project__category">Registro aéreo de obra</p>
+                    <h3 class="project__title">Residência com cobertura metálica</h3>
+                    <ul class="project__meta">
+                      <li><strong>Registro</strong> aéreo da obra</li>
+                    </ul>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="project project--cta">
+              <div class="project__cta">
+                <p class="eyebrow"><span class="eyebrow__line"></span>Próximo projeto</p>
+                <h3 class="project__cta-title">O próximo pode ser o <span class="text-accent">seu</span>.</h3>
+                <p>Vamos transformar seu projeto em uma obra segura, eficiente e memorável.</p>
+                <a href="#contato" class="btn btn--accent">Iniciar meu projeto</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <p class="portfolio__hint" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M9 11V6a2 2 0 1 1 4 0v5m0-1a2 2 0 1 1 4 0v3a7 7 0 0 1-7 7h-.5a6 6 0 0 1-4.9-2.6L3 14.5a1.7 1.7 0 0 1 2.7-2l1.3 1.5V11" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Deslize para ver mais projetos
+        </p>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         PROCESSO / DIFERENCIAIS
+         ============================================================ -->
+    <section class="section process" id="diferenciais" aria-labelledby="process-title">
+      <div class="container">
+        <header class="section-header section-header--center">
+          <p class="eyebrow eyebrow--center reveal"><span class="eyebrow__line"></span>Processo de trabalho<span class="eyebrow__line"></span></p>
+          <h2 class="section-title reveal" id="process-title">Do planejamento à <span class="text-accent">entrega da obra</span>.</h2>
+          <p class="section-lead reveal">
+            Um processo claro, em cinco etapas, do estudo de viabilidade à entrega dos serviços contratados.
+          </p>
+        </header>
+
+        <ol class="timeline" id="timeline">
+          <li class="timeline__progress" aria-hidden="true"><span id="timelineFill"></span></li>
+          <li class="timeline__step reveal">
+            <span class="timeline__dot" aria-hidden="true">01</span>
+            <div class="timeline__card">
+              <h3 class="timeline__title">Planejamento</h3>
+              <p>Entendemos suas necessidades, estudamos a viabilidade da construção e ajudamos na escolha do melhor terreno e local.</p>
+            </div>
+          </li>
+          <li class="timeline__step reveal">
+            <span class="timeline__dot" aria-hidden="true">02</span>
+            <div class="timeline__card">
+              <h3 class="timeline__title">Projetos</h3>
+              <p>Projetos de construção, cálculo estrutural, elétrico e hidrossanitário, elaborados com recursos computacionais de ponta.</p>
+            </div>
+          </li>
+          <li class="timeline__step reveal">
+            <span class="timeline__dot" aria-hidden="true">03</span>
+            <div class="timeline__card">
+              <h3 class="timeline__title">Aprovação e orçamento</h3>
+              <p>Aprovação junto aos órgãos competentes, pré-orçamento, lista de materiais e cronograma.</p>
+            </div>
+          </li>
+          <li class="timeline__step reveal">
+            <span class="timeline__dot" aria-hidden="true">04</span>
+            <div class="timeline__card">
+              <h3 class="timeline__title">Gestão da obra</h3>
+              <p>Orçamentos, compras, execução e administração do canteiro de obra.</p>
+            </div>
+          </li>
+          <li class="timeline__step reveal">
+            <span class="timeline__dot" aria-hidden="true">05</span>
+            <div class="timeline__card">
+              <h3 class="timeline__title">Entrega</h3>
+              <p>Serviços contratados entregues no prazo estabelecido, com a documentação técnica do projeto.</p>
+            </div>
+          </li>
+        </ol>
+
+        <div class="differentials">
+          <article class="diff reveal">
+            <span class="diff__value">ART</span>
+            <h3 class="diff__title">Responsabilidade técnica</h3>
+            <p class="diff__text">Anotação de Responsabilidade Técnica para os serviços de engenharia prestados.</p>
+          </article>
+          <article class="diff reveal">
+            <span class="diff__value">FACENS</span>
+            <h3 class="diff__title">Formação e especialização</h3>
+            <p class="diff__text">Engenheiro Civil formado pela FACENS, especialista em estruturas de concreto e aço.</p>
+          </article>
+          <article class="diff reveal">
+            <span class="diff__value">Completo</span>
+            <h3 class="diff__title">Projetos detalhados</h3>
+            <p class="diff__text">Lista de materiais, plantas e detalhamentos entregues junto com cada projeto.</p>
+          </article>
+          <article class="diff reveal">
+            <span class="diff__value">No prazo</span>
+            <h3 class="diff__title">Compromisso</h3>
+            <p class="diff__text">Serviços contratados entregues no prazo estabelecido, por um preço justo.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         AVALIAÇÕES (perfil real no Google)
+         ============================================================ -->
+    <section class="section reviews" id="depoimentos" aria-labelledby="reviews-title">
+      <div class="container">
+        <div class="reviews__card reveal">
+          <div class="reviews__content">
+            <p class="eyebrow"><span class="eyebrow__line"></span>Avaliações</p>
+            <h2 class="section-title" id="reviews-title">A opinião de quem <span class="text-accent">já construiu</span> conosco.</h2>
+            <p class="section-lead">
+              As avaliações da Conhariki Engenharia são publicadas por clientes no Google.
+              Confira o perfil do escritório — e, se você já é cliente, deixe também a sua.
+            </p>
+          </div>
+          <div class="reviews__actions">
+            <a href="https://www.google.com/maps/place/Conhariki+Engenharia/@-23.8127455,-47.7256877,17z/data=!3m1!4b1!4m6!3m5!1s0x94c59edd181671e3:0xdee02bee886e1aa9!8m2!3d-23.8127456!4d-47.7208168!16s%2Fg%2F11d_d8l5cz" class="btn btn--accent btn--lg" target="_blank" rel="noopener">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M21.35 11.1H12v2.98h5.35c-.23 1.4-1.66 4.1-5.35 4.1-3.22 0-5.85-2.67-5.85-5.96S8.78 6.26 12 6.26c1.83 0 3.06.78 3.76 1.45l2.57-2.47C16.68 3.7 14.55 2.75 12 2.75 6.9 2.75 2.75 6.9 2.75 12S6.9 21.25 12 21.25c5.34 0 8.88-3.75 8.88-9.04 0-.61-.07-1.07-.15-1.53z"/></svg>
+              Ver avaliações no Google
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CTA BANNER
+         ============================================================ -->
+    <section class="cta-banner" aria-labelledby="cta-title">
+      <div class="cta-banner__bg" aria-hidden="true" style="background-image:url('assets/img/pilar-do-sul.jpg')"></div>
+      <div class="container cta-banner__inner reveal">
+        <h2 class="cta-banner__title" id="cta-title">Sua obra merece engenharia de <span class="text-accent">alto padrão</span>.</h2>
+        <div class="cta-banner__actions">
+          <a href="https://wa.me/5515981757894?text=Ol%C3%A1!%20Gostaria%20de%20conversar%20sobre%20um%20projeto." class="btn btn--accent btn--lg" target="_blank" rel="noopener">Conversar no WhatsApp</a>
+          <a href="#contato" class="btn btn--ghost btn--lg">Enviar mensagem</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CONTATO
+         ============================================================ -->
+    <section class="section contact" id="contato" aria-labelledby="contact-title">
+      <div class="container contact__grid">
+        <div class="contact__info">
+          <p class="eyebrow reveal"><span class="eyebrow__line"></span>Contato</p>
+          <h2 class="section-title reveal" id="contact-title">Vamos tirar seu projeto do <span class="text-accent">papel</span>.</h2>
+          <p class="section-lead reveal">
+            Preencha o formulário ou fale diretamente com o engenheiro responsável.
+          </p>
+
+          <ul class="contact__list">
+            <li class="reveal">
+              <a href="https://wa.me/5515981757894" class="contact__item" target="_blank" rel="noopener">
+                <span class="contact__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm5.8 14.03c-.24.68-1.42 1.31-1.96 1.36-.5.05-.98.24-3.3-.69-2.79-1.1-4.56-3.96-4.7-4.14-.13-.18-1.12-1.49-1.12-2.85 0-1.35.71-2.02.96-2.29.25-.27.55-.34.73-.34h.52c.17 0 .4-.06.62.47.24.56.79 1.92.86 2.06.07.14.11.3.02.48-.09.18-.14.3-.27.46-.14.16-.29.36-.41.48-.14.14-.28.29-.12.56.16.27.71 1.17 1.52 1.89 1.05.93 1.93 1.22 2.2 1.36.27.14.43.11.59-.07.16-.18.68-.79.86-1.06.18-.27.36-.23.61-.14.25.09 1.59.75 1.86.89.27.14.45.2.52.32.07.11.07.66-.17 1.33z"/></svg>
+                </span>
+                <span>
+                  <small>WhatsApp comercial</small>
+                  <strong>(15) 98175-7894</strong>
+                </span>
+              </a>
+            </li>
+            <li class="reveal">
+              <a href="mailto:contato@conhariki.com.br" class="contact__item">
+                <span class="contact__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M3.5 6.5l8.5 6.5 8.5-6.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+                </span>
+                <span>
+                  <small>E-mail</small>
+                  <strong>contato@conhariki.com.br</strong>
+                </span>
+              </a>
+            </li>
+            <li class="reveal">
+              <a href="https://www.google.com/maps/place/Conhariki+Engenharia/@-23.8127455,-47.7256877,17z/data=!3m1!4b1!4m6!3m5!1s0x94c59edd181671e3:0xdee02bee886e1aa9!8m2!3d-23.8127456!4d-47.7208168!16s%2Fg%2F11d_d8l5cz" class="contact__item" target="_blank" rel="noopener">
+                <span class="contact__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+                </span>
+                <span>
+                  <small>Escritório</small>
+                  <strong>Av. Papa João XXIII, 295 · Campo Grande, Pilar do Sul - SP</strong>
+                </span>
+              </a>
+            </li>
+          </ul>
+
+          <div class="socials reveal">
+            <a href="https://www.instagram.com/karlys.conhariki/" class="socials__link" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="17.5" cy="6.5" r="1.1" fill="currentColor"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/karlys-conhariki-286788128/" class="socials__link" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4V21H3V9.5zm6.5 0h3.8v1.6h.06c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.77 2.65 4.77 6.1V21h-4v-5.2c0-1.24-.02-2.84-1.73-2.84-1.73 0-2 1.35-2 2.75V21h-4V9.5z"/></svg>
+            </a>
+            <a href="https://www.facebook.com/karlys.conhariki/" class="socials__link" target="_blank" rel="noopener" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M13.5 21v-7.5h2.5l.4-3h-2.9V8.6c0-.87.25-1.46 1.5-1.46H16.6V4.46A21 21 0 0 0 14.3 4.3c-2.28 0-3.84 1.39-3.84 3.95v2.25H7.9v3h2.56V21h3.04z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact__form-wrap reveal reveal--right">
+          <form class="form" id="contactForm" novalidate>
+            <h3 class="form__title">Solicite uma proposta</h3>
+            <p class="form__subtitle">Campos com <span class="text-accent">*</span> são obrigatórios.</p>
+
+            <div class="form__row">
+              <div class="form__field">
+                <input class="form__input" type="text" id="name" name="name" placeholder=" " autocomplete="name" required minlength="3">
+                <label class="form__label" for="name">Nome completo <span class="text-accent">*</span></label>
+                <span class="form__error" data-error-for="name"></span>
+              </div>
+              <div class="form__field">
+                <input class="form__input" type="tel" id="phone" name="phone" placeholder=" " autocomplete="tel" inputmode="tel" required maxlength="15">
+                <label class="form__label" for="phone">WhatsApp / Telefone <span class="text-accent">*</span></label>
+                <span class="form__error" data-error-for="phone"></span>
+              </div>
+            </div>
+
+            <div class="form__field">
+              <input class="form__input" type="email" id="email" name="email" placeholder=" " autocomplete="email" required>
+              <label class="form__label" for="email">E-mail <span class="text-accent">*</span></label>
+              <span class="form__error" data-error-for="email"></span>
+            </div>
+
+            <div class="form__field">
+              <select class="form__input form__select" id="service" name="service" required>
+                <option value="" disabled selected hidden></option>
+                <option value="Cálculo Estrutural">Cálculo Estrutural</option>
+                <option value="Projetos de Construção e Aprovação">Projetos de Construção e Aprovação</option>
+                <option value="Projeto Elétrico">Projeto Elétrico</option>
+                <option value="Projeto Hidrossanitário">Projeto Hidrossanitário</option>
+                <option value="Gestão da Construção">Gestão da Construção</option>
+                <option value="Planejamento de Pré-Construção">Planejamento de Pré-Construção</option>
+                <option value="Outro">Outro</option>
+              </select>
+              <label class="form__label" for="service">Serviço de interesse <span class="text-accent">*</span></label>
+              <span class="form__error" data-error-for="service"></span>
+            </div>
+
+            <div class="form__field">
+              <textarea class="form__input form__textarea" id="message" name="message" placeholder=" " rows="4" required minlength="10"></textarea>
+              <label class="form__label" for="message">Conte um pouco sobre seu projeto <span class="text-accent">*</span></label>
+              <span class="form__error" data-error-for="message"></span>
+            </div>
+
+            <fieldset class="form__channel">
+              <legend>Enviar por</legend>
+              <label class="form__radio">
+                <input type="radio" name="channel" value="whatsapp" checked>
+                <span>WhatsApp</span>
+              </label>
+              <label class="form__radio">
+                <input type="radio" name="channel" value="email">
+                <span>E-mail</span>
+              </label>
+            </fieldset>
+
+            <label class="form__consent">
+              <input type="checkbox" id="consent" name="consent" required>
+              <span>Autorizo o contato da Conhariki Engenharia com base nos dados informados, conforme a LGPD.</span>
+            </label>
+            <span class="form__error" data-error-for="consent"></span>
+
+            <button type="submit" class="btn btn--accent btn--lg btn--block form__submit">
+              <span class="form__submit-text">Enviar solicitação</span>
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+
+            <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================================================
+       RODAPÉ
+       ============================================================ -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a href="#home" class="logo logo--footer" aria-label="Karlys Conhariki Engenharia">
+          <span class="logo__mark">
+          <svg class="logo__svg" viewBox="0 0 452 448" width="44" height="44" aria-hidden="true">
+            <path class="logo__gray" d="M3 174 64 133V444H3Z"/>
+            <path class="logo__gray" d="M85 56 169 3V444H143V133H85Z"/>
+            <path class="logo__orange" d="M226 44 305 114V228L353 116H430L366 275 449 444H362L306 339V444H226Z"/>
+          </svg>
+        </span>
+        <span class="logo__text">
+          <strong>Karlys Conhariki</strong>
+          <small>Engenharia</small>
+        </span>
+        </a>
+        <p class="footer__about">Engenharia civil em Pilar do Sul e região: cálculo estrutural, projetos de construção, elétrico e hidrossanitário, planejamento e gestão de obras.</p>
+      </div>
+
+      <nav class="footer__col" aria-label="Links do rodapé">
+        <h4 class="footer__title">Navegação</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#portfolio">Portfólio</a></li>
+          <li><a href="#diferenciais">Diferenciais</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer__col">
+        <h4 class="footer__title">Serviços</h4>
+        <ul>
+          <li><a href="#servicos">Cálculo Estrutural</a></li>
+          <li><a href="#servicos">Projetos de Construção</a></li>
+          <li><a href="#servicos">Projeto Elétrico</a></li>
+          <li><a href="#servicos">Projeto Hidrossanitário</a></li>
+          <li><a href="#servicos">Gestão da Construção</a></li>
+          <li><a href="#servicos">Pré-Construção</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4 class="footer__title">Contato</h4>
+        <ul>
+          <li><a href="tel:+5515981757894">(15) 98175-7894</a></li>
+          <li><a href="mailto:contato@conhariki.com.br">contato@conhariki.com.br</a></li>
+          <li><a href="https://www.google.com/maps/place/Conhariki+Engenharia/@-23.8127455,-47.7256877,17z/data=!3m1!4b1!4m6!3m5!1s0x94c59edd181671e3:0xdee02bee886e1aa9!8m2!3d-23.8127456!4d-47.7208168!16s%2Fg%2F11d_d8l5cz" target="_blank" rel="noopener">Av. Papa João XXIII, 295<br>Campo Grande · Pilar do Sul - SP<br>CEP 18187-030</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer__bottom">
+      <p>© <span id="year">2026</span> Karlys Conhariki Engenharia. Todos os direitos reservados.</p>
+      <a href="#home" class="footer__top">
+        Voltar ao topo
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </footer>
+
+  <!-- Botão flutuante de WhatsApp -->
+  <a href="https://wa.me/5515981757894?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." class="whatsapp-float" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm5.8 14.03c-.24.68-1.42 1.31-1.96 1.36-.5.05-.98.24-3.3-.69-2.79-1.1-4.56-3.96-4.7-4.14-.13-.18-1.12-1.49-1.12-2.85 0-1.35.71-2.02.96-2.29.25-.27.55-.34.73-.34h.52c.17 0 .4-.06.62.47.24.56.79 1.92.86 2.06.07.14.11.3.02.48-.09.18-.14.3-.27.46-.14.16-.29.36-.41.48-.14.14-.28.29-.12.56.16.27.71 1.17 1.52 1.89 1.05.93 1.93 1.22 2.2 1.36.27.14.43.11.59-.07.16-.18.68-.79.86-1.06.18-.27.36-.23.61-.14.25.09 1.59.75 1.86.89.27.14.45.2.52.32.07.11.07.66-.17 1.33z"/></svg>
+    <span class="whatsapp-float__tooltip">Fale conosco</span>
+  </a>
+
+  <!-- Lightbox do portfólio -->
+  <dialog class="lightbox" id="lightbox" aria-labelledby="lightboxTitle">
+    <div class="lightbox__inner">
+      <figure class="lightbox__figure">
+        <img class="lightbox__img" id="lightboxImg" src="data:," alt="">
+        <figcaption class="lightbox__caption">
+          <span class="lightbox__counter" id="lightboxCounter">01 / 06</span>
+          <span>
+            <strong class="lightbox__title" id="lightboxTitle">Obra</strong>
+            <small class="lightbox__category" id="lightboxCategory"></small>
+          </span>
+        </figcaption>
+      </figure>
+      <button class="lightbox__btn lightbox__btn--close" id="lightboxClose" type="button" aria-label="Fechar visualização">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <button class="lightbox__btn lightbox__btn--prev" id="lightboxPrev" type="button" aria-label="Foto anterior">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <button class="lightbox__btn lightbox__btn--next" id="lightboxNext" type="button" aria-label="Próxima foto">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    </div>
+  </dialog>
+
+  <script src="js/main.js?v=2.2.2" defer></script>
+</body>
+</html>
