@@ -474,23 +474,9 @@ h4 {
   box-shadow: var(--shadow-accent);
 }
 
-.btn--accent::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  background: linear-gradient(120deg, transparent 20%, rgba(255, 255, 255, 0.45) 50%, transparent 80%);
-  transform: translateX(-120%);
-  transition: transform 0.8s var(--ease);
-}
-
 .btn--accent:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 20px 40px -10px rgba(245, 134, 52, 0.7);
-}
-
-.btn--accent:hover::before {
-  transform: translateX(120%);
+  transform: translateY(-1px);
+  box-shadow: 0 16px 32px -12px rgba(245, 134, 52, 0.6);
 }
 
 .btn--ghost {
@@ -505,7 +491,6 @@ h4 {
   background: var(--c-white);
   color: var(--c-graphite);
   border-color: var(--c-white);
-  transform: translateY(-2px);
 }
 
 .btn--dark {
@@ -515,7 +500,6 @@ h4 {
 
 .btn--dark:hover {
   background: var(--c-black);
-  transform: translateY(-2px);
   box-shadow: var(--shadow);
 }
 
@@ -1010,7 +994,7 @@ h4 {
 /* Animação de entrada do hero (controlada por JS via .is-loaded) */
 [data-hero-anim] {
   opacity: 0;
-  transform: translateY(40px);
+  transform: translateY(24px);
   transition: opacity 1s var(--ease), transform 1s var(--ease);
 }
 
@@ -1024,46 +1008,6 @@ h4 {
 .is-loaded [data-hero-anim]:nth-child(3) { transition-delay: 0.45s; }
 .is-loaded [data-hero-anim]:nth-child(4) { transition-delay: 0.6s; }
 .is-loaded [data-hero-anim]:nth-child(5) { transition-delay: 0.75s; }
-
-.hero__scroll {
-  position: absolute;
-  left: 50%;
-  bottom: var(--space-5);
-  display: none;
-  flex-direction: column;
-  align-items: center;
-  gap: var(--space-3);
-  transform: translateX(-50%);
-  color: var(--text-muted);
-  font-size: var(--fs-xs);
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  transition: color var(--t) var(--ease);
-}
-
-.hero__scroll:hover {
-  color: var(--accent);
-}
-
-.hero__scroll-mouse {
-  position: relative;
-  width: 24px;
-  height: 38px;
-  border: 1.5px solid currentColor;
-  border-radius: 14px;
-}
-
-.hero__scroll-wheel {
-  position: absolute;
-  top: 7px;
-  left: 50%;
-  width: 3px;
-  height: 7px;
-  margin-left: -1.5px;
-  background: var(--accent);
-  border-radius: 2px;
-  animation: scrollWheel 1.8s var(--ease) infinite;
-}
 
 /* ---------------------------------------------------------------------
    07. SOBRE
@@ -1178,7 +1122,6 @@ h4 {
 .pillar:hover {
   border-color: rgba(245, 134, 52, 0.4);
   background: var(--c-graphite-3);
-  transform: translateX(6px);
 }
 
 .pillar__icon {
@@ -1253,8 +1196,6 @@ h4 {
 }
 
 .bento__card {
-  --mx: 50%;
-  --my: 50%;
   position: relative;
   display: flex;
   min-height: 280px;
@@ -1269,26 +1210,10 @@ h4 {
     box-shadow var(--t) var(--ease);
 }
 
-/* Brilho que segue o cursor (posição definida por JS) */
-.bento__card::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  pointer-events: none;
-  background: radial-gradient(420px circle at var(--mx) var(--my), rgba(245, 134, 52, 0.16), transparent 45%);
-  opacity: 0;
-  transition: opacity var(--t) var(--ease);
-}
-
 .bento__card:hover {
   border-color: rgba(245, 134, 52, 0.35);
-  transform: translateY(-6px);
+  transform: translateY(-3px);
   box-shadow: var(--shadow-lg);
-}
-
-.bento__card:hover::after {
-  opacity: 1;
 }
 
 .bento__bg {
@@ -1352,7 +1277,6 @@ h4 {
 }
 
 .bento__card:hover .bento__icon {
-  transform: rotate(-6deg) scale(1.06);
   background: var(--accent);
   color: var(--ink);
 }
@@ -1361,6 +1285,9 @@ h4 {
   margin-top: var(--space-6);
   margin-bottom: var(--space-3);
   font-size: var(--fs-xl);
+  overflow-wrap: break-word;
+  -webkit-hyphens: auto;
+  hyphens: auto;
 }
 
 .bento__text {
@@ -1397,10 +1324,6 @@ h4 {
   background: var(--accent-gradient);
   border-color: transparent;
   min-height: 240px;
-}
-
-.bento__card--cta::after {
-  background: radial-gradient(420px circle at var(--mx) var(--my), rgba(255, 255, 255, 0.35), transparent 45%);
 }
 
 .bento__card--cta .bento__title {
@@ -1972,7 +1895,6 @@ h4 {
 a.contact__item:hover {
   border-color: rgba(245, 134, 52, 0.4);
   background: var(--c-graphite-2);
-  transform: translateX(6px);
 }
 
 .contact__icon {
@@ -2384,16 +2306,6 @@ a.contact__item:hover {
   transform: scale(1);
 }
 
-.whatsapp-float::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: 50%;
-  background: #25d366;
-  z-index: -1;
-  animation: pulse 2.4s var(--ease) infinite;
-}
-
 .whatsapp-float svg {
   width: 30px;
   height: 30px;
@@ -2768,19 +2680,16 @@ body.lightbox-open {
    --------------------------------------------------------------------- */
 .reveal {
   opacity: 0;
-  transform: translateY(40px);
+  transform: translateY(20px);
   transition:
     opacity var(--t-slow) var(--ease),
     transform var(--t-slow) var(--ease);
   transition-delay: var(--reveal-delay, 0s);
 }
 
-.reveal--left {
-  transform: translateX(-50px);
-}
-
+.reveal--left,
 .reveal--right {
-  transform: translateX(50px);
+  transform: translateY(20px);
 }
 
 .reveal.is-visible {
@@ -2790,11 +2699,7 @@ body.lightbox-open {
 
 /* Cards do bento mantêm hover após o reveal */
 .bento__card.reveal.is-visible:hover {
-  transform: translateY(-6px);
-}
-
-.pillar.reveal.is-visible:hover {
-  transform: translateX(6px);
+  transform: translateY(-3px);
 }
 
 /* Sem JavaScript, todo o conteúdo permanece visível */
@@ -2809,20 +2714,9 @@ body.lightbox-open {
   to { transform: scale(1.04); }
 }
 
-@keyframes scrollWheel {
-  0% { opacity: 0; transform: translateY(0); }
-  30% { opacity: 1; }
-  100% { opacity: 0; transform: translateY(12px); }
-}
-
 @keyframes swipeHint {
   0%, 100% { transform: translateX(0); }
   50% { transform: translateX(8px); }
-}
-
-@keyframes pulse {
-  0% { transform: scale(1); opacity: 0.6; }
-  100% { transform: scale(1.7); opacity: 0; }
 }
 
 @keyframes spin {
@@ -2908,10 +2802,6 @@ body.lightbox-open {
 
   .section-header__lead {
     max-width: 44ch;
-  }
-
-  .hero__scroll {
-    display: flex;
   }
 
   .about__media {
@@ -3079,6 +2969,18 @@ body.lightbox-open {
 
   .bento__card--structural .bento__title {
     font-size: var(--fs-2xl);
+  }
+
+  /* Cards estreitos: título menor para palavras longas caberem */
+  .bento__card--reports .bento__body,
+  .bento__card--consulting .bento__body {
+    padding: var(--space-5);
+  }
+
+  .bento__card--reports .bento__title,
+  .bento__card--renovation .bento__title,
+  .bento__card--consulting .bento__title {
+    font-size: var(--fs-lg);
   }
 
   /* Portfólio */

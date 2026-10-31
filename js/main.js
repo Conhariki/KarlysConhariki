@@ -8,7 +8,6 @@
      5. Link ativo da navegação
      6. Scroll reveal
      7. Contadores animados
-     8. Brilho dos cards (bento)
      9. Portfólio com scroll horizontal
     10. Timeline do processo
     11. Parallax
@@ -365,20 +364,6 @@
       el.textContent = el.dataset.counter;
     });
   }
-
-  /* -------------------------------------------------------------------
-     8. BRILHO DOS CARDS (BENTO)
-     ------------------------------------------------------------------- */
-  const finePointer = window.matchMedia("(hover: hover) and (pointer: fine)");
-
-  $$("[data-tilt], .bento__card--cta").forEach((card) => {
-    card.addEventListener("pointermove", (event) => {
-      if (!finePointer.matches) return;
-      const rect = card.getBoundingClientRect();
-      card.style.setProperty("--mx", `${event.clientX - rect.left}px`);
-      card.style.setProperty("--my", `${event.clientY - rect.top}px`);
-    });
-  });
 
   /* -------------------------------------------------------------------
      9. PORTFÓLIO COM SCROLL HORIZONTAL
